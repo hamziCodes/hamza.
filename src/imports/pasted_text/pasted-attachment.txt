@@ -1,0 +1,157 @@
+Design a complete high-fidelity portfolio website in a design tool for Syed Muhammad Hamza Sultan, a 6th-semester CS student and AI/ML engineer from Islamabad, Pakistan. The attached data file contains all copy, project details, skills, and content.
+
+DESIGN SYSTEM — ESTABLISH FIRST
+Before any screens, create a styles panel with:
+Color Tokens:
+
+--bg-primary: #090909 (near-black base)
+--bg-secondary: #111111 (card surfaces)
+--accent-primary: #4AFFD4 (electric cyan — brand color)
+--accent-secondary: #7B61FF (violet — secondary glow)
+--accent-tertiary: #FF6B6B (warm red — used sparingly for highlights)
+--text-primary: #F0F0F0
+--text-secondary: #888888
+--border-subtle: rgba(255,255,255,0.06)
+--gradient-hero: linear 135deg from #4AFFD4 to #7B61FF
+
+Typography:
+
+Display / Hero: Syne (weight 800) — for name and section headers
+Body / UI: DM Mono (weight 400, 500) — for all body copy, stack labels, descriptions
+Accent / Labels: Space Mono (weight 400) — for tags, metrics, terminal-style elements
+Scale: 72px / 48px / 32px / 24px / 16px / 13px / 11px
+
+Component Library (build before screens):
+
+Nav link (default + hover + active states)
+CTA Button: primary (cyan fill, black text), ghost (transparent, cyan border)
+Project card: featured (full-width, case-study) + compact (grid card)
+Skill pill: with icon, hover gradient glow
+Section label: small monospace caps + left accent line
+Tech stack badge: dark fill, subtle border
+Metric chip: large number + description text
+Timeline node: connected dot + content block
+Avatar / code terminal block
+
+
+SCREENS TO DESIGN — DESKTOP (1440px) + MOBILE (390px) for each
+
+SCREEN 1 — HERO
+Layout: Full viewport. Dark background. Asymmetric text block left-aligned, 3D interactive mesh or subtle particle field on right half (annotate as "Three.js canvas — interactive").
+Content:
+
+Pre-label: [ AI ENGINEER & DATA SCIENTIST ] in Space Mono, small caps, cyan
+H1: "Syed Muhammad\nHamza Sultan." — Syne 800, 72px, white, tight letter-spacing
+Sub: "I build intelligent systems and ship them into production." — DM Mono, 20px, secondary text
+Stack line: Python · PyTorch · React · Swift · Flutter · n8n — monospace, dim, horizontal
+CTA row: [Download Resume] (primary) + [View Projects] (ghost) + GitHub icon link
+Scroll indicator: animated arrow, bottom center
+3D element annotation: "Floating geometric mesh / low-poly neural net — rotates on mouse move, responds to cursor proximity. Rendered via Three.js."
+
+Microinteractions to annotate:
+
+Name letters stagger-fade in on load (150ms delay each)
+Sub-headline types in on load (typewriter, 40ms per character)
+CTA buttons have gradient sweep on hover
+Background mesh reacts to cursor movement (parallax depth)
+
+
+SCREEN 2 — ABOUT
+Layout: Two-column. Left: large section number 01 + label. Right: text content + two stat cards.
+Content:
+
+Section label: [ ABOUT ]
+Body text (from data file About section — condensed to 3 short paragraphs)
+Two highlight cards: "6th Sem · Bahria University" + "Exchange Program · Dongseo University, South Korea"
+Currently Learning strip: horizontal scroll row of tags — Deep Learning · MLOps · LLMs · Data Engineering · Three.js
+
+Microinteractions:
+
+Stat cards lift on hover (4px translate Y + shadow glow)
+Learning tags scroll loop (infinite marquee, pauses on hover)
+
+
+SCREEN 3 — FEATURED PROJECTS (3 cards, full case-study format)
+Layout: Stacked full-width sections. Each project gets a dedicated panel.
+PROJECT CARD STRUCTURE (repeat × 3):
+Left column (40%):
+
+Project number 01 in giant Syne, dim cyan, background
+Title: e.g., "Vertex IDS" — Syne 800, 36px
+Type badge: NLP · iOS · ML Pipeline
+2-line pitch
+Stack badges (icon + name pills)
+[View Case Study →] link
+
+Right column (60%):
+
+Mockup frame: device frame (iPhone for IDS, multi-device spread for POS, laptop for Food Classification)
+Metrics row: 3–4 metric chips (F1 score, accuracy, platforms, deployment status)
+Architecture flow: small linear diagram Text → NLP → Model → API → iOS
+
+Projects:
+
+Vertex IDS — iPhone mockup + NLP pipeline diagram + accuracy metrics
+Vertex POS Ecosystem — 3-device spread (phone + tablet POS + laptop web) + "3 platforms · Production deployed · Canada"
+Food Image Classification — laptop with prediction output + confusion matrix visual + "CV · Deep Learning · Transfer Learning"
+
+Microinteractions:
+
+Card enters viewport: translate Y 40px → 0 + fade in
+Mockup device: slight 3D tilt on hover (CSS perspective transform)
+Metric chips count up on scroll-enter (number animation)
+Architecture flow nodes pulse sequentially
+
+
+SCREEN 4 — OTHER PROJECTS GRID
+Layout: 2×2 card grid (desktop), 1-col (mobile)
+Cards: Medical Practice SaaS · B2B Lead Gen Engine · Architectural Visualization · HCI Analysis · Compiler Construction
+Each card: Dark surface, top-left type tag, title, 1-line description, tech stack pills, [→] arrow icon top-right
+Microinteraction: Cards tilt 3–5° on hover with gradient border glow animation (cyan→violet sweep)
+
+SCREEN 5 — SKILLS
+Layout: Three grouped columns. No progress bars. Use visual density and grouping instead.
+Groups:
+
+Machine Learning & AI — Python, Scikit-learn, TensorFlow, PyTorch, NLP, Computer Vision
+Development & Engineering — React, Flutter, Swift, Node.js, Firebase, Supabase, n8n
+CS Fundamentals — OOP, DSA, DBMS, Compiler Construction, Software Engineering, HCI
+
+Each skill: Icon + label pill. Hover state: pill glows in accent color.
+Bottom strip: Tool logos row — Git, UI/UX Prototyping, VS Code, Cursor, Copilot, Claude, Android Studio
+
+SCREEN 6 — EXPERIENCE
+Layout: Timeline. Vertical line with nodes.
+Entries:
+
+Vertex Solutions — Founder / Lead Architect (Jun 2026 – Present)
+Dongseo University, South Korea — Exchange Program (Jun 2026)
+Bahria University — BS Computer Science (2023 – Present)
+Ambassador, NAQSH IRTIQA — (date)
+
+Each node: Date · Title · Company/Institution · 2-line descriptor · tech tags
+
+SCREEN 7 — CONTACT
+Layout: Minimal. Dark. Centered. Terminal aesthetic.
+Content:
+
+Section label: [ GET IN TOUCH ]
+H2: "Let's build something." — Syne 800, 48px
+Terminal block: monospace, dark green text on near-black, blinking cursor
+
+  > hamza@vertex ~
+  > status: open to internships & collaborations
+  > location: Islamabad, PK
+  > email: [your email]_
+
+Icon links row: GitHub · LinkedIn · Email — icon only, hover glow
+
+
+DESIGN NOTES FOR DESIGN TOOL
+
+Use Auto Layout throughout — every component must be responsive-ready
+Create 8pt spacing grid — all spacing in multiples of 8
+Every interactive state (default, hover, active, focus) must be designed for all interactive components
+Annotate all Three.js / animation zones clearly with red annotation boxes
+Export assets: SVG icons, PNG mockups @2x, design tokens as JSON via your token plugin
+Prototype: Link Hero CTA → Projects section, all nav links → sections, project cards → case study overlays
