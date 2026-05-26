@@ -67,7 +67,7 @@ const FEATURED_PROJECTS: Project[] = [
     pipeline: ["Requirement Input", "Split Into Items", "Outlier Gate", "Text Cleaning + TF-IDF", "FR/NFR + NFR Models", "Grouped Result"],
     accent: "#4AFFD4",
     github: "https://github.com/hamziCodes/IDS_PROJECT-SRS_CLASSIFICATION",
-    // live: "#",
+    live: "https://vertexclassifyweb.vercel.app/",
   },
   {
     number: "02",
