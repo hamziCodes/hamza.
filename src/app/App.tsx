@@ -541,14 +541,14 @@ function AboutSection() {
           <div className="font-['Space_Mono'] text-xs text-[#4AFFD4] uppercase tracking-widest flex items-center gap-3 mb-2">
             <span>01.</span><div className="flex-1 h-px bg-white/5" />
           </div>
-          <div className="font-['Syne'] font-extrabold text-[60px] sm:text-[80px] leading-none text-white/4 select-none">About</div>
+          <div className="font-['Syne'] font-extrabold text-[60px] sm:text-[80px] leading-none select-none" style={{ color: 'rgba(255,255,255,0.28)' }}>About</div>
         </motion.div>
 
         {/* Two-column layout — stacks naturally on mobile */}
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
           {/* Body text — always flows below heading */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: 0.1 }}
-            className="flex-1 space-y-4 sm:space-y-5 font-['DM_Mono'] text-sm sm:text-[15px] text-[#888] leading-7">
+            className="flex-1 space-y-4 sm:space-y-5 font-['DM_Mono'] text-sm sm:text-[15px] text-[#cfcfcf] leading-7">
             <p>
               6th-semester BSCS student at Bahria University Islamabad, specializing in Data Science and Machine Learning. My work sits at the intersection of applied AI, full-stack engineering, and product deployment — I don't stop at model training; I ship.
             </p>
